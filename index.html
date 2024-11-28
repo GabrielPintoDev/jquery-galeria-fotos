@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button type="submit">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova Imagem</h2>
+        <input type="url" id="enderecoImagemNova" placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botaoCancelar">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img src="./images/foto-gato.avif" alt="pintura de gato">
+            <div class="overlay-imagem-link">
+                <a href="./images/foto-gato.avif" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto-flamingo.jpg" alt="flamingo">
+            <div class="overlay-imagem-link">
+                <a href="./images/foto-flamingo.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto-cachorros.jpg" alt="cachorros filhotes">
+            <div class="overlay-imagem-link">
+                <a href="./images/foto-cachorros.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
